@@ -3,6 +3,7 @@ import java.awt.*;
 
 import Sweeper.Box;
 import Sweeper.Coord;
+import Sweeper.Ranges;
 
 public class MineSweeper extends JFrame {
     private JPanel panel;
@@ -15,6 +16,7 @@ public class MineSweeper extends JFrame {
     }
 
     private MineSweeper() {
+        Ranges.setSize (new Coord (COLS, ROWS));
         setImages();
         initPanel();
         initFrame();
@@ -32,8 +34,9 @@ public class MineSweeper extends JFrame {
                 }
             }
         };
-        panel.setPreferredSize(new Dimension(COLS * IMAGE_SIZE,
-                ROWS * IMAGE_SIZE));
+        panel.setPreferredSize(new Dimension(
+                Ranges.getSize().x * IMAGE_SIZE,
+                Ranges.getSize().y * IMAGE_SIZE));
         add(panel);
     }
 
