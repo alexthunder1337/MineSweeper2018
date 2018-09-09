@@ -1,14 +1,21 @@
 package com.MineSweeper;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class MineSweeper extends JFrame {
+    private JPanel panel;
     public static void main(String[] args) {
-        new MineSweeper().setVisible(true);
+        new MineSweeper();
     }
-
     private MineSweeper(){
+        initPanel();
         initFrame();
+    }
+    private void initPanel(){
+        panel = new JPanel();
+        panel.setPreferredSize(new Dimension(500,500));
+        add (panel);
     }
     private void initFrame (){
         pack();
