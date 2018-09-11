@@ -7,6 +7,7 @@ import java.util.Random;
 public class Ranges {
     private static Coord size;
     private static ArrayList<Coord> allCoords;
+
     public static Coord getSize() {
         return size;
     }
