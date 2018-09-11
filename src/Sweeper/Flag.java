@@ -64,6 +64,6 @@ class Flag {
         for (Coord around : Ranges.getCoordsAround(coord))
             if (flagMap.get(around) == Box.FLAGED)
                 count++;
-            return count;
+        return count;
     }
 }

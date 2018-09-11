@@ -7,12 +7,13 @@ public class Coord {
         this.x = x;
         this.y = y;
     }
+
     @Override
-    public boolean equals(Object o){
-        if (o instanceof Coord){
-            Coord to = (Coord)o;
+    public boolean equals(Object o) {
+        if (o instanceof Coord) {
+            Coord to = (Coord) o;
             return to.x == x && to.y == y;
         }
-    return super.equals(o);
+        return super.equals(o);
     }
 }
