@@ -19,7 +19,7 @@ public class MineSweeper extends JFrame {
     }
 
     private MineSweeper() {
-        game = new Game (COLS, ROWS);
+        game = new Game(COLS, ROWS);
         game.start();
         setImages();
         initPanel();
@@ -44,13 +44,13 @@ public class MineSweeper extends JFrame {
     }
 
     private void initFrame() {
-        pack();
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mine Sweeper 2018");
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
         setIconImage(getImage("icon"));
+        pack();
     }
 
     private void setImages() {
