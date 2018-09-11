@@ -1,2 +1,3 @@
 # MineSweeper2018
-Java Mine Sweeper
+Project name: Java Mine Sweeper
+Author: Sidorov Aleksandr
