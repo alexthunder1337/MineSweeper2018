@@ -20,6 +20,7 @@ public class MineSweeper extends JFrame {
 
     private MineSweeper() {
         game = new Game (COLS, ROWS);
+        game.start();
         setImages();
         initPanel();
         initFrame();
